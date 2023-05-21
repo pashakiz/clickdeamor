@@ -5,56 +5,44 @@ body {
   color: $font_color;
   line-height: 1.5;
   background: $body_bg_color;
-  background-image: url('../img/bg/bgm.svg');
+  background-image: url('../img/bg/pattern-all-m.svg');
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: 100% 115px;
+  background-size: 100% 600px;
   @media (min-width: 992px) {
     font-size: $font_size;
   }
   @media (min-width: 1200px) {
-    background-image: url('../img/bg/bgd.svg');
-    background-size: 1920px 1087px;
-  }
-  @media (min-width: 1920px) {
-    background-size: 100% 1087px;
+    background-image: url('../img/bg/pattern-all-d.svg');
+    background-size: 100% 1210px;
   }
 
-  &.bg-color-profile {
-    background: $bg_light_1;
-    @media (min-width: 1200px) {
+  &.bg-color {
+    background: $bg_dark_1;
+    background-image: none;
+    color: $font_color2;
+    .header {
       background: $body_bg_color;
-      background-image: url('../img/bg/bgd.svg');
+      background-image: url('../img/bg/pattern-all-m.svg');
       background-repeat: no-repeat;
       background-position: 50% 0;
-      background-size: 100%;
-      background-size: 1920px 1087px;
+      background-size: 100% 600px;
+      @media (min-width: 1200px) {
+        background-image: url('../img/bg/pattern-all-d.svg');
+        background-size: 100% 1210px;
+      }
     }
-    @media (min-width: 1920px) {
-      background-size: 100% 1087px;
-    }
-  }
-
-  &.bg-index {
-    background: $bg_light_1;
-    background-image: url('../img/bg/bgm-index.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: 100% 398px;
-    @media (min-width: 1200px) {
-      background-image: url('../img/bg/bgd-index.svg');
-      background-size: 1920px 900px;
-    }
-    @media (min-width: 1400px) {
-      background-size: 100% 988px;
+    .main {
+      @media (min-width: 1200px) {
+        background-image: url('../img/bg/pattern-bottom.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 100% 925px;
+      }
     }
   }
 
-  &.bg-login {
-    @media (min-width: 1200px) {
-      background-image: url('../img/bg/bgd-login.svg');
-    }
-  }
+  &.bg-index {}
 
 }
 
@@ -77,13 +65,17 @@ body {
   }
 
   &.container_text {
-    padding-top: 0;
-    @media (min-width: 992px) {}
+    padding-top: 38px;
+    @media (min-width: 1200px) {
+      padding-top: 140px;
+    }
   }
 
   &.container_unsubscribe {
-    padding-top: 0;
-    @media (min-width: 992px) {}
+    padding-top: 38px;
+    @media (min-width: 1200px) {
+      padding-top: 140px;
+    }
   }
 
   &.container_settings {
