@@ -1,0 +1,38 @@
+/* font-family: "WinongExtended"; */
+/* font-family: "CeraPro"; */
+
+@font-face {
+  font-family: 'WinongExtended';
+  src: url('../fonts/WinongExtended/WinongExtended-Regular.eot');
+  src: url('../fonts/WinongExtended/WinongExtended-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/WinongExtended/WinongExtended-Regular.woff2') format('woff2'),
+  url('../fonts/WinongExtended/WinongExtended-Regular.woff') format('woff'),
+  url('../fonts/WinongExtended/WinongExtended-Regular.otf') format('opentype'),
+  url('../fonts/WinongExtended/WinongExtended-Regular.svg#WinongExtended-Regular') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'CeraPro';
+  src: url('../fonts/CeraPro/CeraPro-Regular.eot');
+  src: url('../fonts/CeraPro/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CeraPro/CeraPro-Regular.woff2') format('woff2'),
+  url('../fonts/CeraPro/CeraPro-Regular.woff') format('woff'),
+  url('../fonts/CeraPro/CeraPro-Regular.ttf') format('truetype'),
+  url('../fonts/CeraPro/CeraPro-Regular.svg#CeraPro-Regular') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'CeraPro';
+  src: url('../fonts/CeraPro/CeraPro-Bold.eot');
+  src: url('../fonts/CeraPro/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CeraPro/CeraPro-Bold.woff2') format('woff2'),
+  url('../fonts/CeraPro/CeraPro-Bold.woff') format('woff'),
+  url('../fonts/CeraPro/CeraPro-Bold.ttf') format('truetype'),
+  url('../fonts/CeraPro/CeraPro-Bold.svg#CeraPro-Bold') format('svg');
+  font-style: normal;
+  font-weight: 700;
+}
