@@ -78,25 +78,19 @@ body {
 
   &.container_text {
     padding-top: 0;
-    @media (min-width: 992px) {
-      max-width: 830px;
-    }
+    @media (min-width: 992px) {}
   }
 
   &.container_unsubscribe {
     padding-top: 0;
-    @media (min-width: 992px) {
-      max-width: 830px;
-    }
+    @media (min-width: 992px) {}
   }
 
   &.container_settings {
     @media (min-width: 992px) {
       padding-top: 0;
     }
-    @media (min-width: 1400px) {
-      max-width: 1190px;
-    }
+    @media (min-width: 1400px) {}
   }
 
   &.container_profile {
@@ -106,9 +100,6 @@ body {
     }
     @media (min-width: 992px) {
       padding-top: 0;
-    }
-    @media (min-width: 1400px) {
-      max-width: 1162px;
     }
   }
 
