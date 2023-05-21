@@ -1,7 +1,7 @@
 //checkbox
-$cc_font_color: $font_color;
-$cc_font_size_mob: 14px;
-$cc_font_size: 25px;
+$cc_font_color: $font_color2;
+$cc_font_size_mob: 15px;
+$cc_font_size: 22px;
 
 $cc_icon_color: $body_bg_color;
 $cc_icon_width_mob: 20px;
@@ -21,37 +21,37 @@ $cc_mark_height: 30px;
 $cc_mark_bradius: 0;
 
 //switcher
-$cs_font_color: $font_color;
-$cs_font_size_mob: 13px;
-$cs_line_height_mob: 24px;
-$cs_font_size: 17px;
-$cs_line_height: 30px;
+$cs_font_color: $font_color2;
+$cs_font_size_mob: 15px;
+$cs_line_height_mob: 30px;
+$cs_font_size: 22px;
+$cs_line_height: 39px;
 
-$cs_icon_width_mob: 50px;
-$cs_icon_height_mob: 20px;
-$cs_icon_width: 90px;
-$cs_icon_height: 30px;
-$cs_icon_right_mob: 20px;
-$cs_icon_right: 30px;
-$cs_icon_color: $body_bg_color;
-$cs_icon_border: 1px solid $font_color;
-$cs_icon_bradius: 0;
+$cs_icon_width_mob: 40px;
+$cs_icon_height_mob: 18px;
+$cs_icon_width: 87px;
+$cs_icon_height: 40px;
+$cs_icon_right_mob: 10px;
+$cs_icon_right: 32px;
+$cs_icon_color: $bg_light_1;
+$cs_icon_border: none;
+$cs_icon_bradius: 50px;
 
-$cs_mark_width_mob: 20px;
-$cs_mark_height_mob: 20px;
-$cs_mark_width: 40px;
-$cs_mark_height: 30px;
-$cs_mark_border: 1px solid $font_color;
-$cs_mark_bradius: 0;
+$cs_mark_width_mob: 25px;
+$cs_mark_height_mob: 18px;
+$cs_mark_width: 48px;
+$cs_mark_height: 40px;
+$cs_mark_border: none;
+$cs_mark_bradius: 50px;
 
-$cs_mark_color_off: $body_bg_color;
-$cs_mark_color_on: $btn_bg_color;
+$cs_mark_color_off: $bg_light_2;
+$cs_mark_color_on: $bg_light_3;
 
 //switcher inline
-$csi_font_size_mob: 13px;
+$csi_font_size_mob: 14px;
 $csi_font_size: 25px;
-$csi_icon_right_mob: 20px;
-$csi_icon_right: 37px;
+$csi_icon_right_mob: 14px;
+$csi_icon_right: 22px;
 
 .customcheck {
   display: block;
@@ -147,9 +147,9 @@ $csi_icon_right: 37px;
 
 .customcheck_switch {
   & + .customcheck_switch {
-    margin-top: 34px;
+    margin-top: 30px;
     @media (min-width: 992px) {
-      margin-top: 47px;
+      margin-top: 60px;
     }
   }
   .customcheck__label {
@@ -157,7 +157,7 @@ $csi_icon_right: 37px;
     font-weight: 300;
     line-height: $cs_line_height_mob;
     font-size: $cs_font_size_mob;
-    //flex-direction: column;
+    flex-direction: column;
     @media (min-width: 992px) {
       //flex-direction: row;
       line-height: $cs_line_height;
@@ -173,15 +173,18 @@ $csi_icon_right: 37px;
       border: $cs_icon_border;
       border-radius: $cs_icon_bradius;
       background-color: transparent;
-      margin: $cs_mark_height_mob/4 $cs_icon_right_mob $cs_mark_height_mob/4 0;
+      //margin: $cs_mark_height_mob/4 $cs_icon_right_mob $cs_mark_height_mob/4 0;
       //margin: $cs_mark_height_mob/4 auto $cs_icon_right_mob;
+      margin: 0 0 $cs_icon_right_mob 0;
       background-color: $cs_icon_color;
       //overflow: hidden;
       @media (min-width: 992px) {
         height: $cs_icon_height;
         width: $cs_icon_width;
         min-width: $cs_icon_width;
-        margin: $cs_mark_height/4 $cs_icon_right $cs_mark_height/4 0;
+        //margin: $cs_mark_height/4 $cs_icon_right $cs_mark_height/4 0;
+        //margin: $cs_mark_height/4 auto $cs_icon_right;
+        margin: 0 0 $cs_icon_right 0;
       }
 
       .customcheck__mark {
@@ -191,13 +194,13 @@ $csi_icon_right: 37px;
         width: $cs_mark_width_mob;
         height: $cs_mark_height_mob;
         background-color: $cs_mark_color_off;
-        transform: translateX(-15px);
+        transform: translateX(-9px);
         border-radius: $cs_mark_bradius;
         border: $cs_mark_border;
         @media (min-width: 992px) {
           width: $cs_mark_width;
           height: $cs_mark_height;
-          transform: translateX(-25px);
+          transform: translateX(-21px);
         }
       }
     }
@@ -215,9 +218,9 @@ $csi_icon_right: 37px;
         border: $cs_icon_border;
         .customcheck__mark {
           background-color: $cs_mark_color_on;
-          transform: translateX(15px);
+          transform: translateX(9px);
           @media (min-width: 992px) {
-            transform: translateX(26px);
+            transform: translateX(21px);
           }
         }
       }
