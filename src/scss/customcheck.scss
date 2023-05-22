@@ -1,24 +1,24 @@
 //checkbox
-$cc_font_color: $font_color2;
+$cc_font_color: $font_color;
 $cc_font_size_mob: 15px;
 $cc_font_size: 22px;
 
-$cc_icon_color: $body_bg_color;
-$cc_icon_width_mob: 20px;
-$cc_icon_height_mob: 20px;
-$cc_icon_width: 30px;
-$cc_icon_height: 30px;
-$cc_icon_right_mob: 15px;
-$cc_icon_right: 19px;
-$cc_icon_bradius: 0;
-$cc_icon_border: 1px solid $font_color;
+$cc_icon_color: $bg_light_4;
+$cc_icon_width_mob: 24px;
+$cc_icon_height_mob: 24px;
+$cc_icon_width: 40px;
+$cc_icon_height: 40px;
+$cc_icon_right_mob: 9px;
+$cc_icon_right: 18px;
+$cc_icon_bradius: 100%;
+$cc_icon_border: none;
 
-$cc_mark_color: $btn_bg_color;
-$cc_mark_width_mob: 20px;
-$cc_mark_height_mob: 20px;
-$cc_mark_width: 30px;
-$cc_mark_height: 30px;
-$cc_mark_bradius: 0;
+$cc_mark_color: $bg_light_3;
+$cc_mark_width_mob: 12px;
+$cc_mark_height_mob: 12px;
+$cc_mark_width: 20px;
+$cc_mark_height: 20px;
+$cc_mark_bradius: 100%;
 
 //switcher
 $cs_font_color: $font_color2;
@@ -157,6 +157,7 @@ $csi_icon_right: 22px;
     font-weight: 300;
     line-height: $cs_line_height_mob;
     font-size: $cs_font_size_mob;
+    color: $cs_font_color;
     flex-direction: column;
     @media (min-width: 992px) {
       //flex-direction: row;
@@ -205,6 +206,7 @@ $csi_icon_right: 22px;
       }
     }
     .customcheck__txt {
+      color: $cs_font_color;
       //padding-top: 3px;
       @media (min-width: 992px) {
         //padding-top: 8px;
@@ -224,6 +226,9 @@ $csi_icon_right: 22px;
           }
         }
       }
+      .customcheck__txt {
+        color: $cs_font_color;
+      }
     }
   }
 
@@ -241,6 +246,7 @@ $csi_icon_right: 22px;
     text-transform: uppercase;
     line-height: 24px;
     font-size: $csi_font_size_mob;
+    color: $cc_font_color;
     @media (min-width: 992px) {
       font-size: $csi_font_size;
     }
@@ -251,6 +257,17 @@ $csi_icon_right: 22px;
       margin: $cs_mark_height_mob/4 $csi_icon_right_mob $cs_mark_height_mob/4 0;
       @media (min-width: 992px) {
         margin: $cs_mark_height/4 $csi_icon_right $cs_mark_height/4 0;
+      }
+    }
+    .customcheck__txt {
+      color: $cc_font_color;
+    }
+  }
+
+  .customcheck__input {
+    &:checked + .customcheck__label {
+      .customcheck__txt {
+        color: $cc_font_color;
       }
     }
   }

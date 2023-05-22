@@ -36,14 +36,14 @@
     background-color: $input_hover_bg;
     color: $input_hover_txt_color;
     border-color: $bg_dark_1;
-    outline: 1px solid $bg_dark_1;
+    outline: $input_hover_focus_outline;
   }
   &::placeholder {
     color: $input_placeholder_color;
     opacity: 0.7;
   }
   @media (min-width: 992px) {
-    padding: 18px 40px;
+    padding: 18px 32px;
     font-size: $input_txt_size;
     line-height: $input_txt_lh;
   }
@@ -53,7 +53,7 @@
     line-height: $input_txt_xs_lh;
     @media (min-width: 1200px) {
       text-align: left;
-      padding: 18px 46px;
+      padding: 18px 32px;
       font-size: $input_txt_size;
       line-height: $input_txt_lh;
     }
@@ -62,33 +62,33 @@
 }
 
 input.form-control {
-  height: 51px;
+  height: 55px;
   @media (min-width: 992px) {
-    height: 80px;
+    height: 78px;
   }
   @media (min-width: 1200px) {
-    height: 80px;
+    height: 78px;
   }
   &.form-control_login {
-    height: 51px;
+    height: 55px;
     @media (min-width: 1200px) {
-      height: 80px;
+      height: 78px;
     }
     @media (min-width: 1400px) {
-      height: 80px;
+      height: 78px;
     }
   }
 }
 
 textarea.form-control {
   border-radius: $textarea_border_radius_mob;
-  min-height: 175px;
+  min-height: 90px;
   @media (min-width: 768px) {
-    height: 175px;
+    height: 100px;
   }
   @media (min-width: 1200px) {
     border-radius: $textarea_border_radius;
-    height: 144px;
+    height: 115px;
   }
 }
 
