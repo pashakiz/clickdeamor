@@ -67,7 +67,7 @@ const makeSVGArrowSize = (elSelector, breakpoint = 1200, width1, height1, width2
 if (document.querySelector('.splide_up') !== null) {
   new Splide( '.splide_up', {
     type       : 'loop',
-    arrows     : true,
+    arrows     : false,
     //arrowPath  : 'M0,0H40V40H0Z',
     arrowPath  : 'M0.292893 7.29338C-0.0976295 7.6839 -0.0976296 8.31707 0.292892 8.70759L6.65685 15.0716C7.04738 15.4621 7.68054 15.4621 8.07107 15.0716C8.46159 14.681 8.46159 14.0479 8.07107 13.6573L2.41422 8.00048L8.07107 2.34363C8.46159 1.95311 8.46159 1.31994 8.07107 0.929417C7.68054 0.538893 7.04738 0.538893 6.65685 0.929417L0.292893 7.29338ZM44.1187 7.00049L1 7.00048L1 9.00048L44.1187 9.00049L44.1187 7.00049Z',
     autoHeight : true,

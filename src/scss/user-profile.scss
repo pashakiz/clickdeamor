@@ -12,9 +12,19 @@ $userprofile-img-wrap-height-lg: 670px;
 $userprofile-img-wrap-width-xl: 435px;
 $userprofile-img-wrap-height-xl: 670px;
 
+.main_up {
+  background: linear-gradient(to bottom, $body_bg_color 300px, transparent 0);
+  @media (min-width: 1200px) {
+    background: none;
+  }
+}
+
 .userprofile {
+  padding-top: 12px;
   position: relative;
   @media (min-width: 1200px) {
+    background: none;
+    padding-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -56,7 +66,7 @@ $userprofile-img-wrap-height-xl: 670px;
   max-width: $userprofile-img-width;
   height: $userprofile-img-height;
   max-height: $userprofile-img-height;
-  border-radius: 600px 600px 0 0;
+  border-radius: 115px;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -67,14 +77,13 @@ $userprofile-img-wrap-height-xl: 670px;
     max-height: $userprofile-img-height;
   }
   @media (min-width: 992px) {
-    border-radius: 300px 300px 0 0;
+    border-radius: 195px;
     width: $userprofile-img-width-lg;
     max-width: $userprofile-img-width-lg;
     height: $userprofile-img-height-lg;
     max-height: $userprofile-img-height-lg;
   }
   @media (min-width: 1200px) {
-    border-radius: 0;
     width: $userprofile-img-width-lg;
     max-width: $userprofile-img-width-lg;
     height: $userprofile-img-height-lg;
@@ -92,74 +101,82 @@ $userprofile-img-wrap-height-xl: 670px;
   display: block;
   margin: 0 auto;
   max-width: 280px;
+  bottom: 106px;
+  padding: 23px 10px;
   position: absolute;
-  bottom: -28px;
-  left: 50%;
-  margin-left: -140px;
-  padding: 26px 10px;
   @media (min-width: 992px) {
     width: auto;
-    height: 60px;
+    height: 78px;
     font-size: 18px;
-    padding: 21px 10px;
+    padding: 31px 10px;
+    bottom: 200px;
+    max-width: 435px;
   }
   @media (min-width: 1200px) {
     position: static;
+    bottom: auto;
     max-width: none;
     width: auto;
-    height: 108px;
-    font-size: 28px;
-    padding: 40px 15px;
-    margin: 40px 0 0;
+    margin: 48px 0 0;
   }
 }
 
 .userprofile__info {
   width: 100%;
   margin: 0 auto;
-  background-color: $body_bg_color;
   @media (min-width: 576px) {
     max-width: 540px;
   }
   @media (min-width: 1200px) {
-    max-width: 580px;
+    max-width: none;
     margin: 0;
-    border-radius: 0 134px 0 0;
     padding: 45px 60px 40px;
   }
   @media (min-width: 1400px) {
-    padding: 45px 65px 40px;
+    max-width: 675px;
+    padding: 45px 60px 40px;
+  }
+  @media (min-width: 1650px) {
+    max-width: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 160px 0 0 95px;
   }
 }
 
 .userprofile__data {
-  padding: 70px 20px 47px;
+  padding: 23px 20px 0;
   @media (min-width: 1200px) {
     padding: 0;
+  }
+  @media (min-width: 1650px) {
+    max-width: 336px;
+    width: 336px;
   }
 }
 
 .userprofile__row {
-  color: $font_color;
+  color: $font_color2;
   line-height: 1;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   text-align: center;
   @media (min-width: 1200px) {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 47px;
   }
 }
 
 .userprofile__name {
   font-family: $font_family;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 25px;
-  margin: 0 0 16px 0;
+  margin: 0 0 15px 0;
   text-transform: uppercase;
   @include overflow-ellipsis;
   @media (min-width: 1200px) {
-    font-size: 49px;
-    margin: 0 0 28px 0;
+    font-size: 37px;
+    margin: 0 0 15px 0;
   }
 }
 
@@ -174,11 +191,12 @@ $userprofile-img-wrap-height-xl: 670px;
 
 .userprofile__loc {
   font-family: $font_family;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
   @include overflow-ellipsis;
   @media (min-width: 1200px) {
-    font-size: 26px;
+    font-size: 19px;
   }
 }
 
@@ -216,67 +234,50 @@ $userprofile-img-wrap-height-xl: 670px;
   // }
   .compatibility__progress {
     &.progress {
-      border-radius: 0;
-      background-color: transparent;
+      border-radius: 100px;
+      background-color: $bg_light_1;
       border: none;
       position: relative;
-      height: 20px;
+      width: 82px;
+      height: 35px;
       @media (min-width: 1200px) {
-        height: 30px;
+        width: 87px;
+        height: 37px;
       }
-      .progress-item {
-        width: 20px;
-        height: 20px;
-        border: 1px solid $font_color;
+      .progress-bar {
+        color: $bg_light_1;
+        font-weight: 500;
+        font-size: 13px;
+        border-radius: 100px;
+        background-color: $bg_light_3;
         @media (min-width: 1200px) {
-          width: 30px;
-          height: 30px;
+          font-size: 17px;
         }
-        & + .progress-item {
-          margin-left: 5px;
+        .progress-title {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: 7px;
           @media (min-width: 1200px) {
-            margin-left: 10px;
+            top: 7px;
           }
         }
-        &.filled {
-          background-color: $btn_bg_color;
-          border-color: $btn_bg_color;
-        }
       }
-      // .progress-bar {
-      //   color: $bg_light_1;
-      //   font-weight: 500;
-      //   font-size: 13px;
-      //   border-radius: 0;
-      //   background-color: $btn_bg_color;
-      //   @media (min-width: 1200px) {
-      //     font-size: 17px;
-      //   }
-      //   .progress-title {
-      //     position: absolute;
-      //     width: 100%;
-      //     text-align: center;
-      //     top: 7px;
-      //     @media (min-width: 1200px) {
-      //       top: 7px;
-      //     }
-      //   }
-      // }
     }
   }
 
   .compatibility__title {
     font-family: $font_family;
-    color: $font_color;
+    color: $font_color2;
     font-weight: 300;
-    font-size: 13px;
-    margin-bottom: 12px;
+    font-size: 14px;
+    margin-top: 12px;
     text-transform: uppercase;
     text-align: center;
     @media (min-width: 1200px) {
       //text-align: left;
-      font-size: 22px;
-      margin-bottom: 15px;
+      font-size: 17px;
+      margin-top: 14px;
     }
   }
 
@@ -287,33 +288,21 @@ $userprofile-img-wrap-height-xl: 670px;
 
     .compatibility__progress {
       &.progress {
-        height: 12px;
+        width: 40px;
+        height: 18px;
         @media (min-width: $user_list_item_breakpoint) {
-          height: 20px;
-        }
-        .progress-item {
-          width: 12px;
-          height: 12px;
-          @media (min-width: $user_list_item_breakpoint) {
-            width: 20px;
-            height: 20px;
-          }
-          & + .progress-item {
-            margin-left: 4px;
-            @media (min-width: $user_list_item_breakpoint) {
-              margin-left: 13px;
-            }
-          }
+          width: 70px;
+          height: 30px;
         }
       }
     }
 
     .compatibility__title {
-      font-size: 10px;
-      margin-bottom: 4px;
+      font-size: 9px;
+      margin-top: 7px;
       @media (min-width: $user_list_item_breakpoint) {
-        font-size: 18px;
-        margin-bottom: 9px;
+        font-size: 14px;
+        margin-top: 13px;
       }
     }
   }
@@ -323,8 +312,8 @@ $userprofile-img-wrap-height-xl: 670px;
 
 .user-profile-title { //Compability score
   font-family: $font_family;
-  color: $font_color;
-  font-weight: 400;
+  color: $font_color2;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 21px;
@@ -338,34 +327,38 @@ $userprofile-img-wrap-height-xl: 670px;
     text-align: left;
   }
   &.user-profile-title_about { //About girl
-    font-size: 25px;
+    font-size: 23px;
     line-height: 1.2;
-    margin-bottom: 23px;
+    margin-bottom: 30px;
     @media (min-width: 992px) {}
     @media (min-width: 1200px) {
-      font-size: 49px;
-      margin-bottom: 39px;
+      font-size: 37px;
+      margin-bottom: 27px;
     }
   }
 }
 
 .user-profile-about {
-  color: $font_color;
+  color: $font_color2;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 30px;
   position: relative;
-  padding: 42px 20px 0;
-  background-color: $bg_light_1;
+  padding: 60px 20px 0;
   margin: 0 auto;
   @media (min-width: 576px) {
     max-width: 540px;
   }
   @media (min-width: 1200px) {
     background-color: transparent;
-    font-size: 17px;
+    font-size: 19px;
     max-width: 100%;
-    padding: 68px 0 0;
+    padding: 60px 0 0;
+  }
+  @media (min-width: 1650px) {
+    width: 460px;
+    max-width: 460px;
+    padding: 0;
   }
   p {
     line-height: 30px;
