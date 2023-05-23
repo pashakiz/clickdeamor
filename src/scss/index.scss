@@ -30,16 +30,6 @@
   }
 }
 
-.secondscreen-bg-bar {
-  background-color: $bg_light_1;
-  height: 280px;
-  margin-bottom: -237px;
-  @media (min-width: 1200px) {
-    height: 582px;
-    margin-bottom: -500px;
-  }
-}
-
 .timer {
   display: flex;
   flex-direction: column;

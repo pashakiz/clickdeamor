@@ -45,7 +45,33 @@ body {
     }
   }
 
-  &.bg-index {}
+  &.bg-index {
+    background: $bg_dark_1;
+    background-image: none;
+    color: $font_color2;
+    .firstscreen {
+      background: $body_bg_color;
+      background-image: url('../img/bg/pattern-main-top-m.svg');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: 100% 600px;
+      @media (min-width: 992px) {
+        background-size: 100% 640px;
+      }
+      @media (min-width: 1200px) {
+        background-image: url('../img/bg/pattern-main-top-d.svg');
+        background-size: 100% 735px;
+      }
+    }
+    .secondscreen {
+      @media (min-width: 1200px) {
+        background-image: url('../img/bg/pattern-main-bottom.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 100% 1944px;
+      }
+    }
+  }
 
 }
 

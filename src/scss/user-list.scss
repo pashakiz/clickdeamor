@@ -170,15 +170,19 @@ $ulist-img-height-lg: 370px;
     }
   }
 
-  // &.user-list-item_extra {
-  //   .user-list-item__photo {}
-  //   .user-list-item__img {}
-  //   .user-list-item__row {}
-  //   .user-list-item__inf {}
-  //   .user-list-item__data {}
-  //   .user-list-item__name {}
-  //   .user-list-item__btn {}
-  // }
+  &.user-list-item_extra {
+    //.user-list-item__photo {}
+    //.user-list-item__img {}
+    .user-list-item__row {
+      padding: 0;
+    }
+    //.user-list-item__inf {}
+    //.user-list-item__data {}
+    .user-list-item__name {
+      margin: 0;
+    }
+    //.user-list-item__btn {}
+  }
 
 }
 

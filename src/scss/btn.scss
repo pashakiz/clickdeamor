@@ -69,23 +69,32 @@
   }
 
   &.btn-login {
-    height: 60px;
-    font-size: 18px;
+    height: 58px;
+    font-size: 13px;
     padding: 20px 10px;
     @media (min-width: 992px) {
-      height: 60px;
-      padding: 20px 10px;
+      height: 58px;
+      padding: 23px 10px;
     }
     @media (min-width: 1200px) {
       width: auto;
-      height: 114px;
-      font-size: 26px;
-      padding: 40px 15px;
+      height: 78px;
+      font-size: 18px;
+      padding: 30px 15px;
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 49px;
+        height: 13px;
+        background-image: url('../img/icons/arrowr.svg');;
+        background-repeat: no-repeat;
+        margin-left: 20px;
+      }
     }
     @media (min-width: 1400px) {
-      height: 114px;
-      font-size: 26px;
-      padding: 40px 15px;
+      height: 78px;
+      font-size: 18px;
+      padding: 30px 15px;
     }
   }
 
