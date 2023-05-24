@@ -24,8 +24,9 @@
   }
 
   &.secondscreen_2 {
+    padding-top: 46px;
     @media (min-width: 1200px) {
-      padding-top: 83px;
+      padding-top: 164px;
     }
   }
 }
@@ -35,12 +36,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 25px;
+  margin: 0 auto 38px;
+  padding: 0 20px;
   //overflow: hidden;
   @media (min-width: 1200px) {
     //width: 410px;
     //min-width: 410px;
-    margin: 0 auto 70px;
+    margin: 0 auto 73px;
   }
   .countdown-js {
     width: 100%;
@@ -50,129 +52,111 @@
 .timer__title {
   font-family: $font_family2;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 27px;
+  line-height: 1.2;
+  color: $font_color2;
+  text-transform: uppercase;
+  text-align: center;
+  @media (min-width: 1200px) {
+    font-size: 90px;
+    line-height: 94px;
+  }
+}
+
+.timer__title2 {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
   color: $font_color;
   text-transform: uppercase;
   text-align: center;
-  //white-space: nowrap;
-  //animation: marquee 2s infinite linear;
+  margin: 26px 0 24px;
   @media (min-width: 1200px) {
-    font-size: 56px;
-    line-height: 1;
+    font-size: 24px;
+    line-height: 62px;
+    margin: 5px 0;
   }
-
-  // &::after {
-  //   content: "Limited\00a0offer\00a0\00a0\00a0\00a0\00a0Limited\00a0offer\00a0\00a0\00a0\00a0\00a0Limited\00a0offer\00a0\00a0\00a0\00a0\00a0Limited\00a0offer\00a0\00a0\00a0\00a0\00a0Limited\00a0offer\00a0\00a0\00a0\00a0\00a0Limited\00a0offer\00a0\00a0\00a0\00a0\00a0Limited\00a0offer\00a0\00a0\00a0\00a0\00a0";
-  //   color: red;
-  // }
-
 }
 
-// .timer:hover > .timer__title {
-//   animation-play-state: paused;
-// }
-
-// @keyframes marquee {
-//   0% {
-//     transform: translateX(0);
-//   }
-//   100% {
-//     transform: translateX(-50%);
-//   }
-// }
+.splide_ulist-extra-login {
+  @media (min-width: 576px) {
+    margin: 0 auto;
+    max-width: 482px;
+  }
+  @media (min-width: 768px) {
+    max-width: 650px;
+  }
+  @media (min-width: 992px) {
+    max-width: 840px;
+  }
+  @media (min-width: 1200px) {
+    max-width: none;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1142px;
+  }
+}
 
 .userfbacks {
+  margin: 0 auto;
+  max-width: 555px;
   padding-bottom: 20px;
   @media (min-width: 1200px) {
+    max-width: 967px;
     padding-bottom: 100px;
   }
 }
 
 .userfback {
-  padding: 20px 0 17px;
-  @media (min-width: 1200px) {
-    padding: 26px 0 18px;
-  }
+  @media (min-width: 1200px) {}
 }
 
 .userfback__inner {
   position: relative;
-  border-radius: 0 55px 0 0;
-  padding: 30px 20px 25px;
-  background-color: $bg_light_1;
-  max-width: 230px;
-  min-height: 220px;
+  padding: 40px 20px 25px;
+  background-image: url('../img/bg/bg-fback-m.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
+  max-width: 170px;
+  min-height: 270px;
   @media (min-width: 1200px) {
-    border-radius: 0 134px 0 0;
-    max-width: 400px;
-    min-height: 320px;
-    max-height: 320px;
-    padding: 50px 50px 50px;
-  }
-
-  &::before, &::after {
-    content: '';
-    width: 42px;
-    height: 37px;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    @media (min-width: 1200px) {
-      width: 63px;
-      height: 53px;
-    }
-  }
-
-  &::before {
-    top: -15px;
-    left: 12px;
-    background-image: url('../img/icons/lquot.svg');
-    @media (min-width: 1200px) {
-      top: -24px;
-      left: 12px;
-      background-image: url('../img/icons/lquot-d.svg');
-    }
-  }
-  &::after {
-    right: 12px;
-    bottom: -15px;
-    background-image: url('../img/icons/rquot.svg');
-    @media (min-width: 1200px) {
-      right: 12px;
-      bottom: -17px;
-      background-image: url('../img/icons/rquot-d.svg');
-    }
+    background-image: url('../img/bg/bg-fback.svg');
+    max-width: 294px;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 76px 35px 50px;
   }
 }
 
 .userfback__name {
   font-family: $font_family2;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0 0 10px 0;
   @media (min-width: 1200px) {
-    font-size: 37px;
-    margin: 0 0 25px 0;
+    font-size: 30px;
+    line-height: 39px;
+    margin: 0 0 16px 0;
   }
 }
 
 .userfback__txt {
   font-family: $font_family;
   font-weight: 400;
-  font-size: 11px;
-  line-height: 21px;
+  font-size: 13px;
+  line-height: 16px;
   @media (min-width: 1200px) {
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 32px;
   }
   p {
-    line-height: 21px;
+    line-height: 16px;
     margin-bottom: 5px;
     @media (min-width: 1200px) {
-      line-height: 28px;
+      line-height: 32px;
     }
   }
 }

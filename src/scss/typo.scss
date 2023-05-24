@@ -112,6 +112,33 @@ h1 {
   }
 }
 
+.h1_login2 {
+  font-family: $font_family2;
+  color: $font_color2;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    font-size: 90px;
+    line-height: 94px;
+  }
+  &.h1_login2_my {
+    margin: 74px 0 46px;
+    @media (min-width: 1200px) {
+      margin: 114px 0 70px;
+    }
+  }
+  span {
+    font-size: 15px;
+    @media (min-width: 1200px) {
+      font-size: 37px;
+    }
+  }
+}
+
 h2 {
   font-family: $font_family2;
   font-weight: 400;
