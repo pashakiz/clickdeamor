@@ -1,25 +1,16 @@
-.firstscreen__imgbg1 {
-  @media (min-width: 1200px) {
-    display: none;
-  }
-}
-.firstscreen__imgbg2 {
-  display: none;
-  @media (min-width: 1200px) {
-    display: block;
-  }
-}
-
 .secondscreen {
   display: none;
 
   &.secondscreen_1 {
-    padding-top: 29px;
+    padding-top: 43px;
     @media (min-width: 1200px) {
-      padding-top: 0;
+      padding-top: 238px;
     }
     @media (min-width: 1400px) {
-      padding-top: 80px;
+      padding-top: 238px;
+    }
+    @media (min-width: 1650px) {
+      padding-top: 238px;
     }
   }
 
@@ -162,21 +153,10 @@
 }
 
 .search-progress {
-  transform: translateY(-310px);
-  @media (min-width: 380px) {
-    transform: translateY(-475px);
-  }
-  @media (min-width: 992px) {
-    transform: translateY(-475px);
-  }
-  @media (min-width: 1200px) {
-    transform: translateY(-19px);
-  }
-
   &.progress {
     width: 100%;
     height: 50px;
-    background-color: $bg_light_1;
+    background-color: $bg_dark_2;
     border-radius: 0;
     position: relative;
     @media (min-width: 992px) {
@@ -191,24 +171,24 @@
     border: none;
     border-radius: 0;
     transition: width 0.2s linear;
-    background-color: $bg_dark_2;
+    background: linear-gradient(90deg, #99D6DB 0%, #5E66E3 100%);
   }
   .search-progress__title {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -12px);
+    transform: translate(-50%, -10px);
     z-index: 10;
-    color: $font_color;
-    font-family: $font_family;
+    color: $font_color2;
+    font-family: $font_family2;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     text-transform: uppercase;
     @media (min-width: 1200px) {
-      font-size: 30px;
-      transform: translate(-50%, -24px);
+      font-size: 18px;
+      transform: translate(-50%, -13px);
     }
   }
   //.search-progress__value {}
@@ -225,17 +205,4 @@
     max-width: 710px;
   }
   @media (min-width: 1400px) {}
-}
-
-.btn-index {
-  transform: translateY(-322px);
-  @media (min-width: 380px) {
-    transform: translateY(-490px);
-  }
-  @media (min-width: 992px) {
-    transform: translateY(-495px);
-  }
-  @media (min-width: 1200px) {
-    transform: translateY(-87px);
-  }
 }
