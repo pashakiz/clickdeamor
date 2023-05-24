@@ -5,7 +5,7 @@
     document.addEventListener('DOMContentLoaded', initPage);
 
     function initPage() {
-      let firstscreens = document.querySelectorAll('.firstscreen');
+      let firstscreens = document.querySelectorAll('.firstscreen__info');
       firstscreens.forEach(div => div.style.display = 'none');
       let secondscreens = document.querySelectorAll('.secondscreen');
       secondscreens.forEach(div => div.style.display = 'none');
@@ -29,7 +29,7 @@
 
     function showAreaIndex() {
       document.body.classList.add('bg-index');
-      document.querySelector('.firstscreen.firstscreen_1').style.display = 'block';
+      document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'block';
       document.querySelector('.secondscreen.secondscreen_1').style.display = 'block';
     }
     function hideAreaIndex() {
@@ -44,9 +44,9 @@
     }
 
     function hideAreaSearch() {
-      document.body.classList.remove('bg-index');
+      //document.body.classList.remove('bg-index');
       document.querySelector('.secondscreen.secondscreen_1').style.display = 'none';
-      document.querySelector('.firstscreen.firstscreen_1').style.display = 'none';
+      document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'none';
     }
 
     function goToLogin() {
@@ -89,8 +89,8 @@
     }
 
     function showAreaLogin() {
-      document.body.classList.add('bg-login');
-      document.querySelector('.firstscreen.firstscreen_2').style.display = 'block';
+      //document.body.classList.add('bg-login');
+      document.querySelector('.firstscreen__info.firstscreen__info2').style.display = 'block';
       document.querySelector('.secondscreen.secondscreen_2').style.display = 'block';
     }
 

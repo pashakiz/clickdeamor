@@ -153,6 +153,12 @@
 }
 
 .search-progress {
+  @media (min-width: 1200px) {
+    margin-bottom: 68px;
+  }
+  @media (min-width: 1400px) {
+    margin-bottom: 92px;
+  }
   &.progress {
     width: 100%;
     height: 50px;
